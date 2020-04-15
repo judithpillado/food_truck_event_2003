@@ -9,4 +9,8 @@ class FoodTruckTest < Minitest::Test
     @food_truck = FoodTruck.new("Rocky Mountain Pies")
   end
 
+  def test_it_exists
+    assert_instance_of FoodTruck, @food_truck
+  end
+
 end
