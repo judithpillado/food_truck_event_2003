@@ -1,2 +1,5 @@
 class Item
-end 
+
+  def initialize(attributes)
+  end
+end
