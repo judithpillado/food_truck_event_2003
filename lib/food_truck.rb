@@ -5,12 +5,16 @@ class FoodTruck
     @inventory = {}
   end
 
-  def check_stock(initial_amount)
-    initial_amount = 0
+  def check_stock(amount)
+    amount = 0
+
   end
 
   def stock(item, amount)
-    @inventory[item] = amount
+    amount = Hash.new(0)
+    @inventory.each do |item, amount|
+      inventory[item] += amount
+    end
   end
 
 end
