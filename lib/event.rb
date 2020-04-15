@@ -10,6 +10,11 @@ class Event
     @food_trucks << food_truck
   end
 
+  def food_truck_names
+    food_truck_name = []
+    food_truck_name << food_truck.name
+  end
+
   # def potential_revenue
   #   @item.price.sum * amount
   # end
